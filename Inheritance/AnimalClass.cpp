@@ -13,14 +13,14 @@ public:
 //    {
 //        name = n;
 //    }
-    void setter()
+    void setter()                  // function to set name
     {
         cout<< "enter name of your animal: ";
         cin>> name;
     }
 
 
-    virtual void makeasound()
+    virtual void makeasound()         //make it virtual.....
     {
         cout<< "Haha.."<<endl;
     }
@@ -41,7 +41,7 @@ public:
         {
             cout<< "meow meow"<<endl;
         }
-        else if ( name == "shathi")
+        else if ( name == "gf")
         {
             cout<< "bok bok kore sob somoy"<<endl;
         }
@@ -49,8 +49,8 @@ public:
             cout<< "No sound for "<<name<<endl;
     }
 };
-//
-//
+
+
 //class cat: public animal
 //{
 //public:
@@ -70,9 +70,11 @@ public:
 
 int main()
 {
-    dog b;
+    dog b,c,d;
     b.setter();
     b.makeasound();
+    c.setter();
+    c.maeksound();
 
     return 0;
 
